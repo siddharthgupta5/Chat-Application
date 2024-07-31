@@ -25,7 +25,7 @@ export const signup = async (req, res) => {
         if(userProfile){
             return res.status(400).json({
                 error:"User profile already exists"
-            })
+            });
         }
 
 
@@ -38,17 +38,31 @@ export const signup = async (req, res) => {
 			profilePic: gender === "male" ? boyProfilePic : girlProfilePic,
 		});
 
-		await newUser.save();
+		// await newUser.save();
 
-		// Generate JWT token here
-		generateTokenAndSetCookie(newUser._id, res);
+		// // Generate JWT token here
+		// generateTokenAndSetCookie(newUser._id, res);
 
-		res.status(201).json({
-			_id: newUser._id,
-			fullName: newUser.fullName,
-			userName: newUser.userName,
-			profilePic: newUser.profilePic,
-		});
+		// res.status(201).json({
+		// 	_id: newUser._id,
+		// 	fullName: newUser.fullName,
+		// 	userName: newUser.userName,
+		// 	profilePic: newUser.profilePic,
+		// });
+
+		if (newUser) {
+			generateTokenAndSetCookie(newUser._id, res);
+			await newUser.save();
+
+			res.status(201).json({
+				_id: newUser._id,
+				fullName: newUser.fullName,
+				userName: newUser.userName,
+				profilePic: newUser.profilePic,
+			});
+		} else {
+			res.status(400).json({ error: "Invalid user data" });
+		}
 	} catch (error) {
 		console.log("Error in signup controller", error.message);
 		res.status(500).json({ error: "Internal Server Error" });
