@@ -47,7 +47,7 @@ NODE_ENV=...
 npm run server
 ```
 
-5. Open another terminal.Navigate into the project directory:
+5. Open another terminal. Navigate into the project directory:
 ```bash
 cd frontend
 ```
