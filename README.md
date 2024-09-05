@@ -26,41 +26,39 @@ This Chat Application is a highly interactive, scalable, and low-latency messagi
 ### Installation and Setup
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/siddharthgupta5/Chat-Application.git
-   ```
+```bash
+git clone https://github.com/siddharthgupta5/Chat-Application.git
+```
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. Create a .env file(optional)
-  ```js
-  PORT=...
-  MONGO_DB_URI=...
-  JWT_SECRET=...
-  NODE_ENV=...
-  ```
+```js
+PORT=...
+MONGO_DB_URI=...
+JWT_SECRET=...
+NODE_ENV=...
+```
+
 4. Start the development server:
-   ```bash
-   npm run server
-   ```
+```bash
+npm run server
+```
+
 5. Open another terminal.Navigate into the project directory:
-   ```bash
-   cd frontend
-   ```
+```bash
+cd frontend
+```
 
 6. Start the frontend server:
-   ```bash
-   npm run dev
-   ```
-   
-   
-
-
-
-### Start the app
-
-```shell
-npm start
+```bash
+npm run dev
 ```
+   
+   
+
+
+
+
