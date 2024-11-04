@@ -6,12 +6,12 @@ This Chat Application is a highly interactive, scalable, and low-latency messagi
 
 ## Features
 
-1. Real-time Messaging: Low-latency messaging with immediate delivery and receipt confirmation.
-2. Efficient Message Storage: Secure and fast retrieval of chat history for both individual and group chats.
-3. Group Chat Support: Users can create and participate in multiple group chats for collaborative discussions.
-4. Multimedia Support: Send and receive images, videos, and other files.
-5. Search Functionality: Quickly search for specific messages or conversations across chats.
-6. Simultaneous Messaging: Send messages to multiple users or groups at once for faster communication.
+1. **Real-time Messaging**: Low-latency messaging with immediate delivery and receipt confirmation.
+2. **Efficient Message Storage**: Secure and fast retrieval of chat history for both individual and group chats.
+3. **Group Chat Support**: Users can create and participate in multiple group chats for collaborative discussions.
+4. **Multimedia Support**: Send and receive images, videos, and other files.
+5. **Search Functionality**: Quickly search for specific messages or conversations across chats.
+6. **Simultaneous Messaging**: Send messages to multiple users or groups at once for faster communication.
 
 
 ## Tech Stacks:
@@ -25,38 +25,42 @@ This Chat Application is a highly interactive, scalable, and low-latency messagi
 
 ### Installation and Setup
 
-1. Clone the repository:
-```bash
-git clone https://github.com/siddharthgupta5/Chat-Application.git
-```
-2. Install dependencies:
-```bash
-npm install
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/siddharthgupta5/Chat-Application.git
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-3. Create a .env file(optional)
-```js
-PORT=...
-MONGO_DB_URI=...
-JWT_SECRET=...
-NODE_ENV=...
-```
+3. **Create a .env file(optional):**
+   ```js
+   PORT=...
+   MONGO_DB_URI=...
+   JWT_SECRET=...
+   NODE_ENV=...
+   ```
 
-4. Start the development server:
-```bash
-npm run server
-```
+4. **Start the development server:**
+   ```bash
+   npm run server
+   ```
 
-5. Open another terminal. Navigate into the project directory:
-```bash
-cd frontend
-```
+5. **Open another terminal. Navigate into the project directory:**
+   ```bash
+   cd frontend
+   ```
 
-6. Start the frontend server:
-```bash
-npm run dev
-```
+6. **Start the frontend server:**
+   ```bash
+   npm run dev
+   ```
    
+7. **Click and Open your browser from the terminal and visit:**
+   ```
+   http://localhost:5173
+   ```
    
 
 
